@@ -1,0 +1,27 @@
+{
+  "name": "agendas",
+  "version": "1.0.0",
+  "description": "This project",
+  "main": "index.js",
+  "type": "module",
+  "engines": {
+    "node": "18.16.1"
+  },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc --sourceMap -p ./",
+    "migration": "npx prisma generate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prisma": "^5.8.0",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.8.0",
+    "fastify": "^4.24.1"
+  }
+}

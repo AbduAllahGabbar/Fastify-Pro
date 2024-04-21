@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "c7f33168-07f6-44b2-83f0-43f73debaa79",
+		"name": "Fastify",
+		"description": "With our REST, easy, and smart \"SMS\" APIs we allow you to integrate SMS at your app and get started in seconds, With Taqnyat, building a solution with SMS capabilities never been easier, a few lines of code will enable the SMS to create a magnificent app fit with your business needs.\n[For more information](https://www.taqnyat.sa/documentation/).\n\nContact Support:\n Name: Taqnyat API Documentation\n Email: support@taqnyat.sa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15913062"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\" : \"Product2\",\r\n \"categoryId\" : \"1cf07109-6531-42d8-8d32-2fc3515fd64d\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3100/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3100",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3100/categories/98e6fa1a-8244-437c-bb09-00d45f8deadb",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3100",
+							"path": [
+								"categories",
+								"98e6fa1a-8244-437c-bb09-00d45f8deadb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Product1-2-2\",\r\n    \"parentId\": \"98e6fa1a-8244-437c-bb09-00d45f8deadb\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3100/categories/6b4ac534-7338-4cce-9268-0af4eb6049d4",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3100",
+							"path": [
+								"categories",
+								"6b4ac534-7338-4cce-9268-0af4eb6049d4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3100/categories",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3100",
+							"path": [
+								"categories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\" : \"Product1-2\",\r\n \"categoryId\" : \"bc3a4ea7-3f43-4013-a037-94c71d8194d0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3100/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3100",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3100/products/98acdb73-ee5b-4c87-8ba3-534fb3666219",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3100",
+							"path": [
+								"products",
+								"98acdb73-ee5b-4c87-8ba3-534fb3666219"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n \"name\" : \"Product2\",\r\n \"categoryId\" : \"6b4ac534-7338-4cce-9268-0af4eb6049d4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:3100/products/98acdb73-ee5b-4c87-8ba3-534fb3666219",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3100",
+							"path": [
+								"products",
+								"98acdb73-ee5b-4c87-8ba3-534fb3666219"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:3100/products",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3100",
+							"path": [
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "<Bearer Token>",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "https://api.taqnyat.sa",
+			"type": "string"
+		}
+	]
+}
